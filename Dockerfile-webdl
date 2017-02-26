@@ -1,0 +1,4 @@
+FROM ubuntu:16_04
+CMD apt-get update && apt-get install nodejs -y --force-yes
+COPY webDlApp /root/webDlApp
+

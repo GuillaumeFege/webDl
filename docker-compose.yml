@@ -1,0 +1,6 @@
+version: "3"
+
+webDl:
+  build:
+    context: .
+    dockerfile: Dockerfile-webdl
