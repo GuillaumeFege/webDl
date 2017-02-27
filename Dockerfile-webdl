@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get install nodejs -y
 
 #COPY webDlApp /root/webDl/webDlApp
-RUN apt-get install git -y && mkdir -p /root/webDl && cd /root/webDl && git clone https://github.com/GuillaumeFege/webDl
+RUN apt-get install git -y && cd /root && git clone https://github.com/GuillaumeFege/webDl
 COPY entrypoint.sh /entrypoint.sh
 CMD ["/bin/bash", "/entrypoint.sh"]
 
