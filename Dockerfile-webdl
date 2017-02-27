@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-RUN apt-get update && apt-get install nodejs npm -y
+RUN apt-get update && apt-get install nodejs-legacy npm -y
 
 #COPY webDlApp /root/webDl/webDlApp
 RUN apt-get install git -y && cd /root && git clone https://github.com/GuillaumeFege/webDl
