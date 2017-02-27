@@ -1,8 +1,9 @@
 FROM ubuntu:16.04
-RUN apt-get update && apt-get install nodejs-legacy npm -y
+RUN apt-get update && apt-get install nodejs-legacy npm -y && npm install npm@latest -g
 
 #COPY webDlApp /root/webDl/webDlApp
 RUN apt-get install git -y && cd /root && git clone https://github.com/GuillaumeFege/webDl
+RUN cd /root/webDl/webDlApp && npm install
 COPY entrypoint.sh /entrypoint.sh
 CMD ["/bin/bash", "/entrypoint.sh"]
 
