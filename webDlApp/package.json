@@ -1,0 +1,11 @@
+{
+  "name": "web-dl-app",
+  "version": "1.0.0",
+  "description": "WEB app for Download",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FEGE Guillaume",
+  "license": "ISC"
+}
